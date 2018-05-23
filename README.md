@@ -5,7 +5,7 @@
 - IDE (eg [Visual Studio Code](https://code.visualstudio.com/download), Notepad or so on)
 
 ## 2. Setup environment
-Windows (10 Pro)
+Windows (tested on 10 Pro version)
 
 1. Install truffle
 
@@ -40,20 +40,30 @@ Windows (10 Pro)
 3. Clone repository
 
    ``
-   git clone ...
+   git clone https://github.com/LedgerLeopard/masterclass.git masterclass
    ``
     
 4. Run Ethereum RPC client
-5. Run truffle console
+5. Compile smart contracts
+
+    ``
+    truffle compile
+    ``
+
+6. Execute smart contracts
 
     ``
     truffle console
     ``
-    
-6. Run commands in truffle console (deploy contract, call function)
+
+    Run commands in truffle console (deploy contract, call function)
 
     ```
     > var contract
     > HelloWorld.new().then((instance) => { contract = instance; })
     > contract.get()
+    ```
+    Output:
+    ```
+    'Hello World'
     ```
