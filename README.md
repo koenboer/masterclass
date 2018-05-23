@@ -32,14 +32,28 @@ Windows (10 Pro)
 
 1. Open PowerShell
 2. Create directory for project
+
     ``
     mkdir masterclass
     ``
-3. Go to the directory
+    
+3. Clone repository
+
+   ``
+   git clone ...
+   ``
+    
+4. Run Ethereum RPC client
+5. Run truffle console
+
     ``
-    cd masterclass
+    truffle console
     ``
-4. Init project
-    ``
-    truffle init
-    ``
+    
+6. Run commands in truffle console (deploy contract, call function)
+
+    ```
+    > var contract
+    > HelloWorld.new().then((instance) => { contract = instance; })
+    > contract.get()
+    ```
