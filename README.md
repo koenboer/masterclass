@@ -1,6 +1,7 @@
 # masterclass
 
 ## 1. Requirements
+- git
 - [NodeJs](https://nodejs.org/en/download/) (version >= 8.11.2)
 - IDE (eg [Visual Studio Code](https://code.visualstudio.com/download), Notepad or so on)
 
@@ -47,6 +48,7 @@ Windows (tested on 10 Pro version)
 5. Compile smart contracts
 
     ``
+    cd masterclass
     truffle compile
     ``
 
